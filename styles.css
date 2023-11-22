@@ -1,5 +1,5 @@
 body {
-    font-family: 'Arial', cursive, sans-serif;
+    font-family: 'Khmer OS Battambang', 'Arial' ,sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
@@ -9,8 +9,8 @@ body {
     background-color: #222;
     color: #fff;
     transform: scale(1);
+    font-size: 20px;
 }
-
 
 .container {
     background-color: #444;
@@ -18,7 +18,7 @@ body {
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 0 20px rgb(227, 225, 225);
-    max-width: 300px; /* Set maximum width for better readability on smaller screens */
+    min-width: 300px; 
     margin: 0 auto; /* Center the container */
 }
 
@@ -67,4 +67,8 @@ button:hover {
 .result {
     font-size: 18px;
     margin-top: 10px;
+}
+
+#generateButton{
+    font-size: 20px;
 }

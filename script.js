@@ -31,5 +31,10 @@ document.getElementById("generateButton").addEventListener("click", function() {
 
     // Display the generated letter and remaining count
     document.getElementById("randomLetter").textContent = randomLetter;
-    document.getElementById("letterDescription").textContent = "Remaining letters: " + totalLetters;
+    document.getElementById("letterDescription").textContent = "pīn yīn ដែលនៅសល់: " + totalLetters;
+
+    // Change button text after the first click
+    if (generateButton.textContent === "ចាប់ផ្តើម") {
+        generateButton.textContent = "ប្តូរអក្សរ";
+    }
 });

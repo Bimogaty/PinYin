@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>គំនូស</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif, sans-serif;
+            background-color: #222;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        h1{
+            color: white;
+            font-size: 40px;
+        }
+
+        h3{
+            color: white;
+        }
+
+        .container {
+            background-color: #444;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 20px rgb(227, 225, 225);
+            min-width: 300px;
+            margin: 0 auto;
+            /* Center the container */
+        }
+
+        .options {
+            margin-top: 20px;
+        }
+
+        .option-button {
+            display: block;
+            margin-bottom: 10px;
+            padding: 15px 25px;
+            font-size: 18px;
+            cursor: pointer;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .option-button:hover {
+            background-color: rgb(81, 211, 146);
+        }
+
+        @media (max-width: 600px) {
+            .option-button {
+                padding: 12px 20px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>Hàn yǔ pīn yīn</h3>
+        <h1>汉语拼音</h1>
+        <div class="options">
+            <a class="option-button" href="/ShengMu/sheng_mu_step.html">Sheng Mu (Step)</a>
+            <a class="option-button" href="/ShengMu/sheng_mu_random.html">Sheng Mu (Random)</a>
+
+            <a class="option-button" href="/YinMu/yin_mu_step.html">Yin Mu (Step)</a>
+            <a class="option-button" href="/YinMu/yin_mu_random.html">Yin Mu (Random)</a>
+
+            <a class="option-button" href="/ZhengTiYinJie/zheng_ti_yin_jie_step.html">Zheng Ti Yin Jie (Random)</a>
+            <a class="option-button" href="/ZhengTiYinJie/zheng_ti_yin_jie_random.html">Zheng Ti Yin Jie (Random)</a>
+
+            <a class="option-button" href="/RandomAll/randomAll.html">Random All pīn yīn</a>
+        </div>
+    </div>
+
+</body>
+
+</html>

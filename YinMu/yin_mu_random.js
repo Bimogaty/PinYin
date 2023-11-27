@@ -1,0 +1,35 @@
+var yin_mu = ['a', 'o', 'e', 'i', 'u', 'ü', 'ai', 'ei', 'ui', 'ao', 'ou', 'iu', 'ie', 'üe', 'er', 'an', 'en', 'in', 'un', 'ün', 'ang', 'eng', 'ing', 'ong'];
+var usedLetters = [];
+var totalLetters = yin_mu.length;
+
+document.getElementById("generateButton").addEventListener("click", function() {
+    if (totalLetters === 0) {
+        document.getElementById("randomLetter").textContent = "Finish!!!";
+        document.getElementById("letterDescription").textContent = "";
+
+        // Change the circle to a rectangle when words finish
+        var circleElement = document.getElementById("circleElement");
+        circleElement.style.borderRadius = "10%";
+        circleElement.style.width = "200px"; // Set the desired width for the rectangle
+        circleElement.style.height = "80px"; // Set the desired height for the rectangle
+        circleElement.style.backgroundColor = "#226f54"; // Set the background color
+
+        return;
+    }
+
+    var randomIndex = Math.floor(Math.random() * totalLetters);
+    var currentLetter = yin_mu[randomIndex];
+
+    usedLetters.push(currentLetter);
+    yin_mu.splice(randomIndex, 1);
+    totalLetters--;
+
+    // Display the generated letter and remaining count
+    document.getElementById("randomLetter").textContent = currentLetter;
+    document.getElementById("letterDescription").textContent = "pīn yīn ដែលនៅសល់: " + totalLetters;
+
+    // Change button text after the first click
+    if (generateButton.textContent === "ចាប់ផ្តើម") {
+        generateButton.textContent = "ប្តូរអក្សរ";
+    }
+});
